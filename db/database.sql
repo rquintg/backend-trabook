@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS `travels`
 (
     `idtravels` INT          NOT NULL AUTO_INCREMENT,
     `pais`      VARCHAR(45)  NULL,
+    `city`      VARCHAR(45)  NULL,
     `price`     VARCHAR(45)  NULL,
     `img`       VARCHAR(255) NULL,
     `price_off` VARCHAR(45)  NULL,
@@ -48,11 +49,11 @@ CREATE TABLE IF NOT EXISTS `util`
     ENGINE = InnoDB;
 
 
-INSERT INTO `travels` (`idtravels`, `pais`, `price`, `img`, `price_off`, `score`, `time`)
-VALUES (1, 'Colombia', '1000000', 'imagen.com', '1200000', '5', '10 Days trip'),
-       (2, 'Peru', '2000000', 'imagen.com', '2200000', '4', '07 Days trip'),
-       (3, 'Mexico', '3000000', 'imageen.com', '3200000', '3', '05 Days trip'),
-       (4, 'Argentina', '4000000', 'imagen.com', '4200000', '2', '03 Days trip');
+INSERT INTO `travels` (`idtravels`, `pais`, `city`, `price`, `img`, `price_off`, `score`, `time`)
+VALUES (1, 'Spain', 'Madrid', '850', 'imagen.com', '950', '5', '10 Days trip'),
+       (2, 'Italy', 'Firenze', '750', 'imagen.com', '950', '4', '07 Days trip'),
+       (3, 'France', 'Paris', '599', 'imageen.com', '699', '3', '05 Days trip'),
+       (4, 'UK', 'London', '950', 'imagen.com', '850', '2', '03 Days trip');
 
 INSERT INTO `blog` (`idblog`, `title`, `date`, `img`)
 VALUES (1, 'The Amazing Difference a year of traveling', 'July 27, 2021', 'imagen.com'),
