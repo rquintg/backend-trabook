@@ -29,10 +29,10 @@ export const getTravelById = async (req, res) => {
 }
 
 export const createTravel = async (req, res) => {
-    const {pais, city, price,img, price_off, score, time} = req.body
+    const {pais, city, price,img, price_off, score} = req.body
     try {
 
-        const [rows] = await pool.query('INSERT INTO travels (pais, city, price, img, price_off, score, time) VALUES (?, ?, ?, ?, ?, ?,?)', [pais, city, price, img, price_off, score, time])
+        const [rows] = await pool.query('INSERT INTO travels (pais, city, price, img, price_off, score) VALUES (?, ?, ?, ?, ?, ?)', [pais, city, price, img, price_off, score])
         res.send({
             idtravels: rows.insertId,
             pais,
@@ -40,8 +40,7 @@ export const createTravel = async (req, res) => {
             price,
             img,
             price_off,
-            score,
-            time
+            score
         })
     } catch (e) {
         console.log(e)
@@ -51,11 +50,11 @@ export const createTravel = async (req, res) => {
 
 export const updateTravel = async (req, res) => {
     const {id} = req.params
-    const {pais, city, price, img, price_off, score, time} = req.body
+    const {pais, city, price, img, price_off, score} = req.body
 
     try {
 
-        const [result] = await pool.query('UPDATE travels SET pais = IFNULL(?, pais), city = IFNULL(?, city), price = IFNULL(?,price), img = ifnull(?, img), price_off = ifnull(?, price_off), score = IFNULL(?, score), time = IFNULL(?, time) WHERE idtravels = ?', [pais, city, price, img, price_off, score, time, id])
+        const [result] = await pool.query('UPDATE travels SET pais = IFNULL(?, pais), city = IFNULL(?, city), price = IFNULL(?,price), img = ifnull(?, img), price_off = ifnull(?, price_off), score = IFNULL(?, score) WHERE idtravels = ?', [pais, city, price, img, price_off, score, id])
 
         if (result.affectedRows <= 0) {
             return res.status(404).json({message: `The travel with id ${id} does not exists`})
