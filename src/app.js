@@ -3,6 +3,7 @@ import indexRoutes from './routes/index.routes.js'
 import travelsRoutes from "./routes/travels.routes.js";
 import blogRoutes from "./routes/blog.routes.js"
 import utilRoutes from "./routes/util.routes.js"
+import bestRoutes from "./routes/best_travel.routes.js"
 
 import cors from 'cors'
 
@@ -18,6 +19,7 @@ app.use(indexRoutes)
 app.use('/api', travelsRoutes)
 app.use('/api', blogRoutes)
 app.use('/api', utilRoutes)
+app.use('/api', bestRoutes)
 
 
 app.use((req, res, next) => {
