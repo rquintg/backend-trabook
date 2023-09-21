@@ -8,8 +8,7 @@
 
 ## Comenzando 🚀
 
-_
-Solo esta desplegado el Backend el front esta en el repositorio:_
+_Solo esta desplegado el Backend el front esta en el repositorio:_
 * [Frontend-trabook](https://github.com/rquintg/frontend-trabook)
 
 En la API se implemento todos metodos: GET, POST, PATCH, DELETE, y contiene las imagenes para el front
@@ -17,7 +16,9 @@ En la API se implemento todos metodos: GET, POST, PATCH, DELETE, y contiene las 
 Mira **Instalacion** para conocer como desplegar la API.
 
 ### Screenshot
-![NodeJS](https://camo.githubusercontent.com/c32a4dfd6031d70ce3ff06fdd006d16e0c04f0c9b44475f6926c2da37fe1bd2a/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a4d313051614f316d5a436b5f6a76483245424e6d61512e6a706567)
+<p align="center">
+<img src="https://miro.medium.com/max/1400/1*M10QaO1mZCk_jvH2EBNmaQ.jpeg" style="width:550px !important; height:300px !important" alt="node express mongoDB"></a>
+</p>
 
 
 ## Tecnologias 📋
