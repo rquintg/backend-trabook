@@ -1,0 +1,65 @@
+## Tabla de contenido
+1. [Info General](#Tabla-de-contenido)
+2. [Tecnologias](#Tecnologias-)
+3. [Instalacion](#Instalación-)
+4. [Ejecucion de la API](#Ejecutando-la-API-)
+5. [Despliegue](#Despliegue-)
+
+
+## Comenzando 🚀
+
+_
+Solo esta desplegado el Backend el front esta en el repositorio:_
+* [Frontend-trabook](https://github.com/rquintg/frontend-trabook)
+
+En la API se implemento todos metodos: GET, POST, PATCH, DELETE, y contiene las imagenes para el front
+
+Mira **Instalacion** para conocer como desplegar la API.
+
+### Screenshot
+![NodeJS](https://camo.githubusercontent.com/c32a4dfd6031d70ce3ff06fdd006d16e0c04f0c9b44475f6926c2da37fe1bd2a/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a4d313051614f316d5a436b5f6a76483245424e6d61512e6a706567)
+
+
+## Tecnologias 📋
+***
+A list of technologies used within the project:
+* [node](https://nodejs.org): Version 18.17.1
+
+
+
+## Instalación 🔧
+***
+
+```
+$ git clone [https://github.com/rquintg/backend-trabook.git]
+$ cd ../path/to/the/file
+$ npm install
+```
+Tener presente que se debe crear la base de datos en MYSQL y en la ruta ./db/database.sql se encuentra el script para crear la base de datos y las tablas
+
+## Ejecutando la API 🚀
+
+Correr en modo Desarrollo: ```$ npm run dev```
+
+Correr en modo Produccion ```$ npm run start```
+
+## Despliegue 📦
+
+La API usa variables de entorno configurados en un archivo .env la cual se requiere implementar para su  funcionamiento
+
+```
+PORT=Puerto de la API
+DB_PORT= Puerto de la base de datos
+DB_HOST= localhost
+DB_USER= usuario de la base de datos
+DB_PASSWORD= usuario de la base de datos
+DB_NAME= nombre de la base de datos
+```
+
+
+
+
+
+
+
+
