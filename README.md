@@ -17,7 +17,7 @@ Mira **Instalacion** para conocer como desplegar la API.
 
 ### Screenshot
 <p align="center">
-<img src="https://miro.medium.com/max/1400/1*M10QaO1mZCk_jvH2EBNmaQ.jpeg" style="width:550px !important; height:300px !important" alt="node express mongoDB"></a>
+<img src="https://www.dailyupblog.com/wp-content/uploads/node_express.jpg" style="width:550px !important; height:300px !important" alt="node express"></a>
 </p>
 
 
